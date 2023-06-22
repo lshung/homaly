@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Masonry Layout for Photo Gallery (Homaly)</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Homaly Style -->
+    <style type="text/css">
+        .homaly_img {
+            opacity: 0;
+        }
+
+        .homaly_loaded {
+            opacity: 1;
+            transition-duration: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="homaly-wrapper">
+        <a href="https://dummyimage.com/900x600/98EF36/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/900x600/98EF36/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/1000x600/B4A761/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/1000x600/B4A761/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/700x500/C2A6A5/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/700x500/C2A6A5/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/800x600/8EE071/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/800x600/8EE071/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/600x600/5583EB/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/600x600/5583EB/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/1000x600/BC941/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/1000x600/BC941/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/900x900/505922/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/900x900/505922/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/800x600/90CEE4/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/800x600/90CEE4/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/900x500/CE334A/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/900x500/CE334A/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/1000x600/18BDA6/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/1000x600/18BDA6/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/500x700/9CA689/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/500x700/9CA689/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/900x700/3B51C5/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/900x700/3B51C5/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/1000x500/3BBFCC/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/1000x500/3BBFCC/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/700x500/25A35D/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/700x500/25A35D/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/800x600/D0CFD6/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/800x600/D0CFD6/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/900x600/53EB80/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/900x600/53EB80/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/1000x500/797FC4/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/1000x500/797FC4/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/900x600/4E33BF/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/900x600/4E33BF/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/1000x600/5F98A1/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/1000x600/5F98A1/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/800x900/D7F8A/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/800x900/D7F8A/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/800x500/433468/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/800x500/433468/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/1000x700/2FB7F9/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/1000x700/2FB7F9/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/700x900/18CD8/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/700x900/18CD8/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+        <a href="https://dummyimage.com/900x600/B90176/fff.jpg&text=Homaly" data-lightbox="lb1" class="homaly_item"><img data-src="https://dummyimage.com/900x600/B90176/fff.jpg&text=Homaly" class="homaly_img lazyload" /></a>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="homaly.min.js"></script>
+    <!-- Homaly Init -->
+    <script>
+        $(document).ready(function () {
+            $(".homaly-wrapper").homaly({
+                item_selector: "a.homaly_item",
+                img_selector: "img.homaly_img",
+                img_loaded_class: "homaly_loaded animate__animated animate__jackInTheBox",
+                img_height: 200,
+                img_spacing: 5,
+            }).init();
+        });
+    </script>
+</body>
+
+</html>
