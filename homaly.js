@@ -32,9 +32,15 @@
             _getImageList();
             _applyInitCss();
             // Resize event
+            // Use cached width to fix the problem that the resize event auto fires when scrolling on mobile
+            var cachedWidth = $(window).width();
             $(window).resize(function () {
-                if (me.resize_timeout) { clearTimeout(me.resize_timeout); }
-                me.resize_timeout = setTimeout(_onResize, 500);
+                var newWidth = $(window).width();
+                if (newWidth !== cachedWidth) {
+                    cachedWidth = newWidth;
+                    if (me.resize_timeout) { clearTimeout(me.resize_timeout); }
+                    me.resize_timeout = setTimeout(_onResize, 500);
+                }
             });
             // Need imagesloaded plugin, otherwise use lazysizes for lazyloading
             if (typeof lazySizes != "undefined") {
